@@ -26,4 +26,13 @@ class StoreRequest extends FormRequest
             'price' => 'required|string',
         ];
     }
+    public function messages()
+    {
+        return [
+            'name.required' => 'Tên sản phẩm là bắt buộc.',
+            'name.string' => 'Tên sản phẩm phải là một chuỗi ký tự.',
+            'name.max' => 'Tên sản phẩm không được vượt quá 255 ký tự.',
+            'price.required' => 'Giá sản phẩm là bắt buộc.',
+        ];
+    }
 }
