@@ -17,5 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::post('/products', [ProductController::class, 'store']);
-Route::get('/products', [ProductController::class, 'index']);   
+Route::post('/api/products', [ProductController::class, 'store']);
+Route::get('/api/products', [ProductController::class, 'index']);   
